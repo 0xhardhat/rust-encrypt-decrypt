@@ -17,14 +17,15 @@ cd eth_encryption
 ```
 2. Add the following dependencies to your `Cargo.toml`:
 
+```toml
 [dependencies]
-aes-gcm = "0.10"  # For AES-GCM decryption  
-generic-array = "0.14" 
-hex = "0.4"        # For hex encoding  
-rand = "0.8"       # For random number generation  
-secp256k1 = { version = "0.24", features = ["rand", "recovery", "std"] }  # For using secp256k1 cryptography
-serde = { version = "1.0", features = ["derive"] }  
-serde_json = "1.0"   
+aes-gcm = "0.10"
+generic-array = "0.14"
+hex = "0.4"
+rand = "0.8"
+secp256k1 = { version = "0.24", features = ["rand", "recovery", "std"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 hmac = "0.12"
 sha2 = "0.10"
 
@@ -32,7 +33,8 @@ sha2 = "0.10"
 
 Running the Script
 
-```cargo build
+```bash
+   cargo build
    cargo run
 ```
 
