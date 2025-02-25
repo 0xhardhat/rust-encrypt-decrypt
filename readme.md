@@ -28,6 +28,7 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 hmac = "0.12"
 sha2 = "0.10"
+```
 
 3. Copy the provided code into src/main.rs
 
